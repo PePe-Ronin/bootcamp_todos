@@ -8,9 +8,6 @@ void main() async {
   /// like camera, GPS, bluetooth.
   WidgetsFlutterBinding.ensureInitialized();
 
-  /// Make sure to initialize Hive DB
-  /// so that we can use later for opening
-  /// and closing boxes.
   await Hive.initFlutter();
 
   runApp(const MyApp());
